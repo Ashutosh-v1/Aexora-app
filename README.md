@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Aexora | Smart AI Expense Tracker
 
-## Getting Started
+**Aexora** is a modern, AI-integrated financial management solution designed to simplify how users track, analyze, and optimize their personal finances. Built with **Next.js**, it leverages artificial intelligence to provide actionable insights and automated categorization.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **AI-Powered Insights:** Automatically categorizes transactions and provides personalized budgeting advice.
+* **Real-time Analytics:** Interactive dashboards to visualize spending patterns over time.
+* **Smart Budgeting:** Set monthly limits and receive AI-driven alerts before you overspend.
+* **Scalable Architecture:** Built with a focus on high performance and clean code principles.
+* **Secure Authentication:** Robust user data protection and secure session management.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+### **Frontend & Framework**
+* **Next.js 14+** (App Router)
+* **Tailwind CSS** (Styling & Responsive Design)
+* **Shadcn/UI** (Component Library)
+* **Lucide React** (Iconography)
 
-To learn more about Next.js, take a look at the following resources:
+### **Backend & Database**
+* **Prisma** (Database ORM)
+* **PostgreSQL / MongoDB** (Database)
+* **Middleware.js** (Edge-based request handling)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **AI Integration**
+* **Gemini API / OpenAI SDK** (Intelligent financial analysis)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📂 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+/aexora
+├── actions/            # Server Actions for form submissions & data mutations
+├── app/                # Next.js App Router (Pages, Layouts, API routes)
+├── components/         # Reusable UI components (shadcn/ui)
+├── data/               # Static data or initial seeds
+├── hooks/              # Custom React hooks (state & logic)
+├── lib/                # Utility functions, DB clients, and AI logic
+├── prisma/             # Database schema and migrations
+├── public/             # Static assets (images, icons, etc.)
+└── middleware.js       # Authentication and route protection logic
