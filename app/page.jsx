@@ -106,5 +106,3 @@ export default function Home() {
      </div>
     );
 }
-
-//3:48:18
