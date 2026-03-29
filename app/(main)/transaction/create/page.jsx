@@ -5,10 +5,10 @@ import AddTransactionForm from '../_components/transaction-form';
 import { getTransaction } from '@/actions/transaction';
 
 const AddTransactionPage = async ({ searchParams }) => {
-  // ✅ unwrap searchParams (Next.js new requirement)
+  // fixed unwrap searchParams (Next.js new requirement)
   const { edit: editId } = await searchParams;
 
-  // ✅ fetch data in parallel (better performance)
+  // fixed fetch data in parallel (better performance)
   const [accounts, initialData] = await Promise.all([
     getUserAccounts(),
     editId ? getTransaction(editId) : Promise.resolve(null),
