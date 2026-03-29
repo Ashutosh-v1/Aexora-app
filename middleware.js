@@ -1,5 +1,5 @@
 import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
-import arcjet, { createMiddleware, detectBot, shield } from '@arcjet/next';
+import arcjet, { createMiddleware, shield } from '@arcjet/next';
 
 const isProtectedRoute = createRouteMatcher([
     "/dashboard(.*)",
@@ -12,13 +12,7 @@ const aj = arcjet({
   rules: [
     shield({
       mode: 'LIVE'
-    }),
-    detectBot({
-      mode: 'LIVE',
-      allow:[
-        "CATEGORY:SEARCH_ENGINE", "GO_HTTP"
-      ],
-    }),
+    })
   ],
 });
 
